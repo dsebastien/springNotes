@@ -78,13 +78,16 @@
   * can be used with MVC and WebFlux
   * = @RequestMapping\(method= RequestMethod.POST\)
 * @ExceptionHandler
+
   * handle exceptions at the controller level
   * used to define the class of exception it will catch
   * use on methods that should be invoked to handle some exception type\(s\)
 
 * @InitBinder
+
   * method-level
   * identifies methods that initialize the WebDataBinder -- a DataBinder that binds the request parameter to JavaBean objects
+
 * @Mappings and @Mapping
   * used on fields
 * @MatrixVariable
@@ -251,7 +254,24 @@
   * start the Spring context for integration tests
   * will bring up the full auto-configuration context \(with either a fake or a real container\)
 * @DataJpaTest
-  * provides auto
+  * only provides auto configuration required to test Spring Data JPA using an in-memory database
+  * used instead of @SpringBootTest
+* @DataMongoTest
+  * only provides auto configuration required to test Spring Data MongoDb using an embedded MongoDB
+* @WebMvcTest
+  * bring up a mock servlet context for testing the MVC layer
+  * services and components are not loaded into the context
+  * to provide these dependencies for testing, @MockBean can be used
+* @AutoConfigureMockMvc
+  * similar to @WebMvcTest but starts the full Spring Boot context
+* @MockBean
+  * creates and injects a Mockito mock for the given dependency
+* @JsonTest
+  * limit the auto-configuration of Spring Boot to components relevant to processing JSON
+  * also auto-configures an instance of JacksonTester or GsonTester
+* @TestPropertySource
+  * used at class level
+  * used to specify property sources for the test class
 
 
 
