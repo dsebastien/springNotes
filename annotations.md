@@ -89,7 +89,9 @@
   * identifies methods that initialize the WebDataBinder -- a DataBinder that binds the request parameter to JavaBean objects
 
 * @Mappings and @Mapping
+
   * used on fields
+
 * @MatrixVariable
   * used to annotate request handler method arguments so that Spring can inject the relevant bits of a matrix URI
 * @PathVariable
