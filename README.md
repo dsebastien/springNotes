@@ -1,3 +1,6 @@
-# My Awesome Book
+# Spring Notes
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+These are my notes about Spring Boot... By no means a reference guide, but a way for me to remember stuff ;-\)
+
+Reference: https://docs.spring.io/spring/docs/current/spring-framework-reference/
+
